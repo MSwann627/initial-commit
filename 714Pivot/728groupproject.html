@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IEedge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">        
         <link rel="stylesheet=type="text/css" href="css/style.css">
-        <title>Travel With Me!</title>
+        <title>Travel Like A Boss!</title>
         <style>
           * {
             box-sizing: border-box;
@@ -59,7 +59,7 @@
                 }
 
             .nav li a{
-                 text-decoration: none; /*added to remove underline*/      
+                 text-decoration: underline; /*added to  underline*/      
                 }
 
              .nav li:hover {
@@ -70,6 +70,7 @@
              }  
              .nav li a:hover {
                 color: brown; /*this will made text in nav bar brown when hovered*/
+                text-decoration: none;/*when hover no underline*/
         
              } 
 
@@ -88,13 +89,36 @@
                 color: chartreuse;
                 font-size: 30px;
              }
+             /*animations*/
+             div {
+                width: 100px;
+                height: 100px;
+                background-image: url(http://bestanimations.com/Nature/Water/wave-ocean-animated-gif-7.gif);
+                animation-name: example;
+                animation-duration: 10s;
+                }
 
-             
+                @keyframes example {
+                0%   {background-image: url(http://gifimage.net/wp-content/uploads/2017/11/fish-swimming-gif-11.gif);}
+                25%  {background-image: url(https://media1.giphy.com/media/Idsapq4evk9HlS9Bdv/200.gif?cid=790b7611ybaasv8j31vjuf5voetwabkn3fmanmnee3ymnio1&rid=200.gif&ct=g);}
+                50%  {background-color: blue;}
+                100% {background-color: green;}
+                }
+                  /*added image opacity so that its opaque and changes to original picture when hover*/
+                img {
+                opacity: 0.5;
+                }
+
+                img:hover {
+                opacity: 1.0;
+                }
+                
+               
         </style>
 
           
         </head>
-       
+       <div></div>
              <body style="background-color:beige; /*the background was beige at first*/ background-image: url(http://bestanimations.com/Nature/Water/wave-ocean-animated-gif-7.gif); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;"> <!--adds moving background used a gif for the effects*/ -->
                 <h1><u><center><h1>Travel The World With Me!</h1></center></u>
                
@@ -112,6 +136,7 @@
                         <li><a href="728groupproject.html">Home</a></li>
                         <li><a href="728AboutUs.html">About Us</a></li>
                         <li><a href="728Contact.html">Contact Us</a></li>
+                            
                     </ul>
                     <br><br>
                     <ul class="li">

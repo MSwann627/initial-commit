@@ -10,12 +10,11 @@ Fix jumping on hover,
 .nav {
   background-color: #3483eb;
   list-style-type: none; 
-  text-align: center;
   text-align: left;
   width: 200px; /*added 200px width*/
   margin: 0;
   border-radius: 15px; 
-  padding: 2.5px, 0; /*divided padding from nav li*/
+  padding: 2.5px 0; /*divided padding from nav li*/ /*removed comma in padding to make the hover stretch to left side*/
 }
 
 .nav li {
@@ -48,6 +47,21 @@ Fix jumping on hover,
     color: white;
 }
 
+[href*="#home"] {
+    background-color: gray; /*contains #home*/
+}
+
+[href^="#c"] {
+    background-color: orange; /*contains #c*/
+
+}
+[href$="ts"] {
+    background-color: green; /*contains ts*/
+}
+
+[class~="nav"] {
+    background-color: red; /*contains nav*/
+}
 </style>
 </head>
 <body>
