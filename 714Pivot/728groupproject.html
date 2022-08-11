@@ -10,13 +10,14 @@
           * {
             box-sizing: border-box;
             }
-
-            .img-container {
+            /*images will float left*/
+            .img-container { 
             float: left;
             width: 50px;
             padding: 5px;
+            border-radius: 20px;
             }
-
+            /*added to make content go to new line*/
             .clearfix::after {
             content: "";
             clear: both;
@@ -38,35 +39,37 @@
                 text-align: center;
                 margin: 0;
                 width: 100%;
-                padding: 2.5px 0;
+                padding: 2.5px, 0;
                 border-radius: 20px;
                 
                 
                 
                 }
 
+                /*horizontal* nav bar*/
             .nav li {
-                display: inline-block;
+                display: inline-block; 
                 font-size: 20px;
                 font-weight: bold;
                 padding: 20px;
                 text-transform: uppercase;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*font fallback*/
                 border-top: 5px solid powderblue;
                 
                 }
 
             .nav li a{
-                 text-decoration: none;       
+                 text-decoration: none; /*added to remove underline*/      
                 }
 
              .nav li:hover {
                 background-color: paleturquoise;
                 border-radius: 20px;
+                border-top: 5px;
                 
              }  
              .nav li a:hover {
-                color: brown;
+                color: brown; /*this will made text in nav bar brown when hovered*/
         
              } 
 
@@ -74,19 +77,30 @@
                 content: "";
                 clear: both;
                 display: table;
-
+             }   
+             /*created class to target li elements*/
+             .li{
+                font-size: 40px;
              }
+             /*target all hrefs*/  
+             a[href^="https"] { 
+                font-weight: bold;
+                color: chartreuse;
+                font-size: 30px;
+             }
+
+             
         </style>
 
-                
           
         </head>
        
-            <body style="background-color:beige; background-image: url(http://bestanimations.com/Nature/Water/wave-ocean-animated-gif-7.gif); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+             <body style="background-color:beige; /*the background was beige at first*/ background-image: url(http://bestanimations.com/Nature/Water/wave-ocean-animated-gif-7.gif); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;"> <!--adds moving background used a gif for the effects*/ -->
                 <h1><u><center><h1>Travel The World With Me!</h1></center></u>
                
                 <p style="color: black;">Welcome to the great adventureto travel with me virtually to see the world. I will take you along some of the places you dreamed of going but havent quite yet knocked off the bucketlist. Places like Bora Bora, Turks & Caicos, The Maldives, Egypt, Dubai, and South Africa!
                 </p> 
+                
                     
               
               
@@ -99,6 +113,9 @@
                         <li><a href="728AboutUs.html">About Us</a></li>
                         <li><a href="728Contact.html">Contact Us</a></li>
                     </ul>
+                    <br><br>
+                    <ul class="li">
+
                     
                     <li>Bora Bora</li>
                     <a href="https://www.borabora.com/" target="blank" class="blue"><img src="https://www.visualitineraries.com/img/locations/Bora-Bora-Pearl-Beach-Resort-Spa-52215.jpg" style="width:50px;height:55px"><br>
@@ -123,12 +140,12 @@
                 </ul>
                 <br><br>
              
-               
-                <p>
+               <!-- changed font size -->
+                <p style="font-size: 30px;">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias corporis quaerat distinctio? Quae dolorum ex assumenda doloribus eveniet? Iste ea eos esse fugit eaque vero possimus distinctio aut voluptates magnam.
                 </p>
-                
-                <p>
+                <!-- changed font size -->
+                <p style="font-size:25px">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias corporis quaerat distinctio? Quae dolorum ex assumenda doloribus eveniet? Iste ea eos esse fugit eaque vero possimus distinctio aut voluptates magnam.
                 </p>
                 
