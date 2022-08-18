@@ -105,10 +105,13 @@ li a {
 /* added to match target logo size */
 img {
    /* margin-left: 0;**/ /*do not need it now.*/
-    width: 24px;
+    width: 48px;
+}
+
+
 
      
-}
+
 
 .cyber {
     width: 100%;
@@ -119,8 +122,8 @@ img {
     width: 100%;
     height: 80px;
     /* margin: auto; */
-    /* display: flex; */
-    /* align-items: center; */
+    display: flex;
+    align-items: center;
     font-family: "Helvetica";
     font-size: 16px;
     font-weight: bold;
@@ -157,22 +160,7 @@ section {
     color: aqua;
 }
 
-/* .navbar {
-    
-    list-style-type: none;
-    text-align: center;
-    /* justify-content: center;
-    align-items: flex-start; */
-    /* align-self: stretch; */
-    /* flex-direction: column; */
-    /* float: left; */
-    /* margin: 0; */
-    /* border-radius: 15px;
-    padding: 2.5px 0;
-    width:calc(100%-30px);  */
- 
-    
-/* } */
+
 .navbar li {
     display: inline-block;
     font-size: 20px;
@@ -192,8 +180,9 @@ section {
     color: black;
 } */
 .navbar li:hover {
-    background-color: #F4F4F4;
+    background-color: white;
     border-radius: 10px;
+    text-decoration: underline;
     /* border-top: 5px solid #5234EB; */
 }
 
@@ -214,7 +203,7 @@ ul li ul {
     margin-top: 22.5px;
     padding: 0 !important;
     border: 1px solid #90B9F0;
-    background-color: #90B9F0;
+    background-color:white;
     z-index: 1;
 }
 
@@ -238,17 +227,18 @@ article {
     margin: auto;
     font-size: 24px;
     border-bottom: 1px;
+    color: rgba(27, 14, 165, 0.993);
+    background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?format=jpg&width=960);
 
 }
 
-.fuckthisshit {
+.latenightwork{
     width: 80px;
 }
-/* makes dropdown appear */
-/* ul li. product-sub-menu:hover {
-    display: block;
-   
-} */
+
+hr {
+    border-top-style: dotted;
+}
 
 .footer {text-align: center;
     background-color: grey;
