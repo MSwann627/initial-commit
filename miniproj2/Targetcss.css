@@ -1,0 +1,260 @@
+/* Header {color: rgb(204, 0, 0);
+    fill: rgb(204, 0, 0);
+    font-family: "Helvetica for Target", "HelveticaForTarget", "Targetica", "HelveticaNeue for Target", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.4285;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-indent: 0px;
+    text-shadow: none;
+    text-transform: none;
+    white-space: normal;} */
+
+/* .navbar li {
+    display: inline-block;
+    font-family: "Helvetica for Target", "HelveticaForTarget", "Targetica", "HelveticaNeue for Target", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.4285;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-indent: 0px;
+    text-shadow: none;
+    text-transform: none;
+    list-style-type: none;
+    white-space: normal;
+    margin-left: 400px;
+    padding-top: 20px;
+    padding-right: 0px;
+    /* position:sticky */
+/* }
+
+img {
+    float: left;
+    color: rgb(204, 0, 0);
+    fill: rgb(204, 0, 0);
+    font-family: "Helvetica for Target", "HelveticaForTarget", "Targetica", "HelveticaNeue for Target", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.4285;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0px;
+    text-indent: 0px;
+    text-shadow: none;
+    text-transform: none;
+    white-space: normal;
+} */ 
+
+/* reset default settings */
+*{
+    /* padding:0; */
+    margin:0;
+    /* box-sizing: border-box; */
+}
+/* display flex for vertical center*/
+/* align-items element for direction */
+/* justify-content to push links back to right side */
+header{
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    background-color: #CC0000;
+    color: white;
+    /* text-align: right; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10%;
+    }
+
+/* margin-right for spacing between links */
+header a{
+    color:white;
+    margin-right:5%;
+    font-family: "Helvetica" ;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+
+    
+}
+/*added hover text decoration to underline when hovered over*/
+header a:hover {
+    text-decoration: underline;
+}
+    
+
+    /* puts navbar in horizontal */
+li{
+    display: inline;
+    padding: 20px;
+}
+
+
+/* removes underline */
+/* margin and padding added to match target */
+li a {
+      text-decoration:none;
+      margin: 0px 0px 0px 8px;  
+      padding: 0px 24px 0px 16px;
+      font-weight: bold;
+      color: black;
+}
+
+/* added to match target logo size */
+img {
+   /* margin-left: 0;**/ /*do not need it now.*/
+    width: 24px;
+
+     
+}
+
+.cyber {
+    width: 100%;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    /* margin: auto; */
+    /* display: flex; */
+    /* align-items: center; */
+    font-family: "Helvetica";
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10%;
+
+    
+}
+/* when hovered over it will be lightgray */
+.navbar li a:hover{
+    /* background-color: #F4F4F4; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    width: 24px;
+    height: 24px;
+    
+}
+
+section {
+    width: 80%;
+    /* height: 800px; */
+    /* background-color: black; */
+    margin: auto;
+    /* background-image: url(cyber.jpg); */
+    color:aqua;
+    position: relative;
+}
+
+
+
+.cyber-text {
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: aqua;
+}
+
+/* .navbar {
+    
+    list-style-type: none;
+    text-align: center;
+    /* justify-content: center;
+    align-items: flex-start; */
+    /* align-self: stretch; */
+    /* flex-direction: column; */
+    /* float: left; */
+    /* margin: 0; */
+    /* border-radius: 15px;
+    padding: 2.5px 0;
+    width:calc(100%-30px);  */
+ 
+    
+/* } */
+.navbar li {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+   
+}
+.navbar li a:link {
+    text-decoration: none;
+    ;
+}
+/* .navbar li a:link,
+.navbar li a:visited,
+.navbar span {
+    color: black;
+} */
+.navbar li:hover {
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    /* border-top: 5px solid #5234EB; */
+}
+
+.navbar li.selected {
+    background-color: green;
+}
+ul {
+    list-style: none;
+}
+ul li {
+    position: relative;
+}
+ul li ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    /* width: 250px; */
+    margin-top: 22.5px;
+    padding: 0 !important;
+    border: 1px solid #90B9F0;
+    background-color: #90B9F0;
+    z-index: 1;
+}
+
+ul li ul li {
+    white-space: nowrap;
+}
+/* makes dropdown appear */
+ul li:hover ul{
+display: block;
+
+}
+
+article {
+    width: 80%;
+    /* margin: auto; */
+    /* float: right; */
+    
+}
+
+.Team-section {
+    margin: auto;
+    font-size: 24px;
+    border-bottom: 1px;
+
+}
+
+.fuckthisshit {
+    width: 80px;
+}
+/* makes dropdown appear */
+/* ul li. product-sub-menu:hover {
+    display: block;
+   
+} */
+
+.footer {text-align: center;
+    background-color: grey;
+    color: white;
+    padding: 15px;}
+
+ 
+
+

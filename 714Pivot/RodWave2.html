@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .navbar {
+            background-color: #3483EB;
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            border-radius: 15px;
+            padding: 2.5px 0;
+            width:calc(100%-30px) ;
+            background-image: linear-gradient(red,blue,green );
+        }
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            border-top: 5px solid #3483EB;
+        }
+        .navbar li a:link {
+            text-decoration: none;
+            ;
+        }
+        .navbar li a:link,
+        .navbar li a:visited,
+        .navbar span {
+            color: white;
+        }
+        .navbar li:hover {
+            background-image: linear-gradient(90deg,blue,green,black)
+            background-color: red;
+            border-radius: 10px;
+            border-top: 5px solid #5234EB;
+        }
+        .navbar li:hover a:link,
+        .navbar li:hover a:visited {
+            color: white;
+        }
+        .navbar li.selected {
+            background-color: green;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            position: relative;
+        }
+        ul li ul {
+            position: absolute;
+            left: 0;
+            display: none;
+            /* width: 250px; */
+            margin-top: 22.5px;
+            padding: 0 !important;
+            border: 1px solid #90B9F0;
+            background-color: #90B9F0;
+            background-image: radial-gradient(blue orange)
+        }
+
+        ul li:hover > ul{
+        display: block;
+    }
+        /* .product-sub-menu {
+            display: none;
+            position: absolute;
+        }
+        .nav span:hover~.product-sub-menu {
+            display: block;
+            z-index: 1;
+        }
+        .nav li:nth-child(2) {
+            position: relative;
+        }
+        .nav .product-sub-menu li {
+            position: relative;
+            display: block;
+        } */
+    </style>
+    <script>
+    </script>
+</head>
+<body>
+    <h1>Horizontal Navigation Links</h1>
+    <p>By default, list items <span> are displayed</span> vertically. In this example we use display: inline-block to display them horizontally (side by side).</p>
+    <p>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li>
+            <span>Products</span>
+            <ul class="product-sub-menu">
+                <li>Product A</li>
+                <li>Product B</li>
+                <li>Product C</li>
+                <li>Product D</li>
+            </ul>
+        </li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</body>
+</html>
