@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+ 
+        .nav {
+            /* added for linear */
+            
+            background-image: linear-gradient(to right, red , yellow, blue);
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            border-radius: 15px;
+            padding: 2.5px 0;
+            width: calc(100%-30px);
+        }
+        
+       
+        .nav li {
+            display: inline-block;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            /* padding-right: 22px; */
+            text-transform: uppercase;
+            font-family: sans-serif;
+            border-top: 5px solid #3483eb;
+        }
+       
+        .nav li a:link {
+            text-decoration: none;
+        }
+       
+        .nav li a:link,
+        .nav li a:visited,
+        .nav span {
+            color: white;
+        }
+       
+        .nav li:hover {
+            background-color: #345beb;
+            border-radius: 10px;
+            border-top: 5px solid #5234eb;
+            background-image: linear-gradient(90deg, red, yellow, blue);
+             /* added for linear gradient 90 degrees */
+        }
+       
+        .nav li:hover a:link,
+        .nav li:hover a:visited {
+          
+          
+        
+            color: white;
+        }
+       
+        .nav li.selected {
+            background-color: green;
+        }
+       
+        /* #div1 {
+            position: absolute;
+            left: 50px;
+            width: calc(30% - 100px);
+            border: 1px solid black;
+            background-color: yellow;
+            padding: 5px;
+        } */
+
+
+        ul {
+            list-style: none;
+        }
+       
+        ul li {
+            position: relative;
+        }
+       
+       
+        ul li ul{
+            position: absolute;
+            left: 0;
+            display: none;/*added this element back in code */
+            /* white-space: nowrap; */
+            width: 160px; /*changed width to 160px*/
+            margin-top: 22.5px;
+            padding: 0 !important;
+            padding-right: 0 !important;
+            /* border: 1px solid #90b9f0; */
+            /* background-color: #90b9f0; */
+            background-image: radial-gradient(red, yellow, green); 
+            /* added for radial gradient */
+
+        }
+       
+        ul li ul li {
+            /* width: 100%; */
+        }
+       
+        ul li ul li ul {
+            top: 0;
+        }
+       
+        ul li:hover ul {
+            display: block;
+        }
+        /* .product-sub-menu {
+            display: none;
+            position: absolute;
+        }
+       
+        .nav span:hover~.product-sub-menu {
+            display: block;
+            z-index: 1;
+        }
+       
+        .nav li:nth-child(2) {
+            position: relative;
+        }
+       
+        .nav .product-sub-menu li {
+            position: relative;
+            display: block;
+        } */
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+
+    <h1>Horizontal Navigation Links</h1>
+    <p>By default, list items <span> are displayed</span> vertically. In this example we use display: inline-block to display them horizontally (side by side).</p>
+    <p>Note: If you resize the browser window, the links will automatically break when it becomes too crowded.</p>
+
+    <ul class="nav">
+        <li><a href="#home">Home</a></li>
+        <li>
+            <span>Products</span>
+            <ul class="product-sub-menu">
+                <li>Product A</li>
+                <li>Product B</li>
+                <li>Product C</li>
+                <li>Product D</li>
+            </ul>
+        </li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#clients">Our Clients</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+</body>
+
+</html>

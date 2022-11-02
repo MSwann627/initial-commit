@@ -76,6 +76,7 @@ header a{
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
+    
 
     
 }
@@ -106,18 +107,19 @@ li a {
 img {
    /* margin-left: 0;**/ /*do not need it now.*/
     width: 48px;
-}
-
-
-
-     
+}    
 
 
 .cyber {
     width: 100%;
 
 }
-
+ /* width and height set for cart */
+.cart {
+    width: 40px;
+    height: 30px;
+    /* margin-left: 10%; */
+}
 .navbar {
     width: 100%;
     height: 80px;
@@ -128,6 +130,8 @@ img {
     font-size: 16px;
     font-weight: bold;
     padding-left: 10%;
+    
+   
 
     
 }
@@ -227,23 +231,55 @@ article {
     margin: auto;
     font-size: 24px;
     border-bottom: 1px;
-    color: rgba(27, 14, 165, 0.993);
+    /* letter-spacing: 1rem; */
+    color:aqua;
     background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?format=jpg&width=960);
+    /* opacity: 0.3; this will change the entire page's opacity */
 
 }
 
 .latenightwork{
     width: 80px;
+    border-radius: 100%;
+    
 }
 
 hr {
     border-top-style: dotted;
+    
 }
 
-.footer {text-align: center;
+.Products {text-align: center;
     background-color: grey;
-    color: white;
-    padding: 15px;}
+    color: blue;
+    padding: 15px;
+    
+}
+/* positons social media in footer  */
+.socialmedia {
+    /* margin: 5px;
+    /* border: solid blue;
+    border-radius: 100%; */
+    /* padding: 5px;
+    width: 100%;
+    height: 25px; */
+    position: relative;
+    left: 0;
+    bottom: 0; */
+   
+
+
+}
+/* gives social media a border  */
+.socialmedia img {
+    margin: 5px;
+    border: solid white 5px;
+    border-radius: 100%;
+    padding: 5px;
+    /* width: 100%; */
+    height: 25px;
+    background-color: aquamarine;
+}
 
  
 
